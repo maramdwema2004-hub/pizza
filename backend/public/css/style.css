@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0b0b0b;
+    color: white;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1601924582975-7d1b6d7a2c1a') center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    background-color: rgba(0,0,0,0.75);
+    padding: 60px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #c62828;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 120px 10%;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card span {
+    color: #e53935;
+    font-size: 22px;
+}
+
+.card button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #e53935;
+    border: none;
+    color: white;
+}
+
+.gallery {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.reserve {
+    padding: 100px;
+    text-align: center;
+}
+
+.reserve input {
+    padding: 10px;
+    margin: 10px;
+    width: 220px;
+}
+
+.reserve button {
+    padding: 12px 30px;
+    background-color: #c62828;
+    border: none;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
